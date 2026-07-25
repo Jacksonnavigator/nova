@@ -1,4 +1,4 @@
-﻿import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { PageShell, PageHeader } from "@/components/site/PageShell";
 import { GlassCard } from "@/components/site/GlassCard";
@@ -64,9 +64,10 @@ function Contact() {
               </p>
             </div>
           </div>
-          <Info icon={Mail} label="Email" value="technova.iot@gmail.com" />
-          <Info icon={Phone} label="Phone" value="+255 756 617 479" />
-          <Info icon={MessageSquare} label="WhatsApp" value="+255 692 224 582" />
+          <Info icon={Mail} label="Email" value="novatech.iot@gmail.com" />
+          <Info icon={Phone} label="Phone" value="+255 682 334 222" />
+          <Info icon={Phone} label="Alt. Phone" value="+255 627 182 180" />
+          <Info icon={MessageSquare} label="WhatsApp" value="+255 627 182 180" />
           <Info icon={MapPin} label="Headquarters" value="Arusha, Tanzania" />
           <Info icon={Clock} label="Hours" value="Mon-Sat, 8am-6pm EAT" />
           <div>
@@ -167,3 +168,6 @@ function Info({ icon: Icon, label, value }: { icon: typeof Phone; label: string;
     </div>
   );
 }
+
+
+

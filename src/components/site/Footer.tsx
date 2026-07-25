@@ -15,12 +15,12 @@ const quickLinks = [
 ] as const;
 
 const serviceLinks = [
-  "Embedded Systems",
-  "IoT Solutions",
-  "Smart Automation",
+  "IoT & Automation",
+  "Smart Agriculture",
+  "PCB Design",
   "Electronics Repair",
   "Cloud Dashboards",
-  "Networking",
+  "Wi-Fi Solutions",
 ] as const;
 
 export function Footer() {
@@ -84,11 +84,11 @@ export function Footer() {
           <ul className="space-y-3 text-sm">
             <li className="flex gap-2.5 text-slate-400">
               <Phone className="h-4 w-4 text-brand shrink-0 mt-0.5" />
-              +255 756 617 479
+              +255 682 334 222 / +255 627 182 180
             </li>
             <li className="flex gap-2.5 text-slate-400">
               <Mail className="h-4 w-4 text-brand shrink-0 mt-0.5" />
-              technova.iot@gmail.com
+              novatech.iot@gmail.com
             </li>
             <li className="flex gap-2.5 text-slate-400">
               <MapPin className="h-4 w-4 text-brand shrink-0 mt-0.5" />
@@ -100,7 +100,7 @@ export function Footer() {
 
       <div className="border-t border-slate-800">
         <div className="mx-auto max-w-7xl px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} TechNova Electronics & IoT. All rights reserved.</p>
+          <p>Copyright {new Date().getFullYear()} TechNova Electronics & IoT. All rights reserved.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-white transition-colors">
               Privacy Policy
@@ -114,3 +114,5 @@ export function Footer() {
     </footer>
   );
 }
+
+

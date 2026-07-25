@@ -1,46 +1,31 @@
-﻿import {
+import {
   Wrench, Cpu, Radio, Cloud, ShieldCheck, Wifi, Database, Code2, Server,
   Home, Sprout, Factory, Zap, Droplet, Camera, Fingerprint, Sun, Plug,
   CircuitBoard, Smartphone, Laptop, Monitor, Bot, Network, HardDrive, Layers,
 } from "lucide-react";
 
 export const services = [
-  { icon: Smartphone, title: "Phone Repair", desc: "Screens, batteries, boards â€” fast and reliable." },
-  { icon: Laptop, title: "Laptop Repair", desc: "Diagnostics, upgrades, motherboard repair." },
-  { icon: Monitor, title: "Computer Repair", desc: "Hardware and software maintenance." },
-  { icon: Wrench, title: "Electronics Repair", desc: "Consumer & industrial device recovery." },
-  { icon: CircuitBoard, title: "PCB Design", desc: "Schematic to production-ready boards." },
-  { icon: Cpu, title: "Embedded Systems", desc: "Firmware for microcontrollers & SoCs." },
-  { icon: Bot, title: "Arduino Projects", desc: "Prototyping and educational solutions." },
-  { icon: Radio, title: "ESP32 Development", desc: "Wireless IoT nodes and gateways." },
-  { icon: Layers, title: "STM32 Development", desc: "High-performance embedded platforms." },
-  { icon: HardDrive, title: "Raspberry Pi Solutions", desc: "Edge computing and control." },
-  { icon: Wifi, title: "IoT Devices", desc: "End-to-end connected products." },
-  { icon: Home, title: "Smart Home Automation", desc: "Lighting, HVAC, security & voice." },
-  { icon: Sprout, title: "Smart Agriculture", desc: "Sensor-driven crop intelligence." },
-  { icon: Droplet, title: "Automatic Irrigation", desc: "Zone-based water optimization." },
-  { icon: Factory, title: "Industrial Automation", desc: "PLC, SCADA and telemetry." },
-  { icon: Zap, title: "Energy Monitoring", desc: "Real-time power analytics." },
-  { icon: Droplet, title: "Water Monitoring", desc: "Level, quality and flow tracking." },
-  { icon: Radio, title: "Remote Sensors", desc: "LoRa, GSM and satellite links." },
-  { icon: Smartphone, title: "Mobile Apps", desc: "iOS & Android native/cross-platform." },
-  { icon: Code2, title: "Web Development", desc: "Marketing sites, portals, SaaS." },
-  { icon: Monitor, title: "Desktop Software", desc: "Cross-platform business tools." },
-  { icon: Cloud, title: "Cloud Dashboards", desc: "Real-time device visualization." },
-  { icon: Bot, title: "AI Solutions", desc: "Computer vision & predictive models." },
-  { icon: Database, title: "Database Systems", desc: "SQL / NoSQL / time-series." },
-  { icon: Server, title: "API Development", desc: "REST & GraphQL microservices." },
-  { icon: Network, title: "Networking", desc: "LAN, WAN and structured cabling." },
-  { icon: Wifi, title: "Wi-Fi Solutions", desc: "Enterprise-grade coverage." },
-  { icon: Server, title: "MikroTik", desc: "Advanced routing & hotspot systems." },
-  { icon: Server, title: "Server Installation", desc: "On-prem and hybrid servers." },
-  { icon: Camera, title: "CCTV Installation", desc: "HD & AI-powered surveillance." },
-  { icon: Fingerprint, title: "Fingerprint Systems", desc: "Biometric identity solutions." },
-  { icon: ShieldCheck, title: "Access Control", desc: "Doors, gates, and time tracking." },
-  { icon: Sun, title: "Solar Installation", desc: "Off-grid & hybrid PV systems." },
-  { icon: Plug, title: "Electrical Installation", desc: "Certified wiring & panels." },
+  { icon: Smartphone, title: "Phone Repair", desc: "Screen, battery, charging, board and software repair for mobile devices." },
+  { icon: Laptop, title: "Laptop Repair", desc: "Hardware repair, upgrades, diagnostics and system recovery." },
+  { icon: Monitor, title: "Computer Maintenance", desc: "Desktop servicing, operating system support and performance cleanup." },
+  { icon: Wrench, title: "Electronic Device Repair", desc: "Consumer and industrial electronics troubleshooting and repair." },
+  { icon: Home, title: "Smart Home Systems", desc: "Connected lighting, security, comfort and app-based home control." },
+  { icon: Sprout, title: "Smart Agriculture", desc: "IoT systems for soil, irrigation, field monitoring and farm intelligence." },
+  { icon: Factory, title: "Industrial Monitoring", desc: "Factory, machine and process telemetry for real-time operational visibility." },
+  { icon: Radio, title: "Remote Sensor Systems", desc: "Wireless sensor networks using LoRa, GSM and cloud-connected gateways." },
+  { icon: CircuitBoard, title: "PCB Design", desc: "Schematic design, layout and production-ready electronics boards." },
+  { icon: Cpu, title: "Embedded Systems", desc: "Firmware and microcontroller systems for connected products and machines." },
+  { icon: Layers, title: "Custom Electronics", desc: "Purpose-built electronic circuits, modules and control hardware." },
+  { icon: Bot, title: "Prototype Development", desc: "Rapid proof-of-concept builds for hardware, IoT and automation ideas." },
+  { icon: Smartphone, title: "Mobile Applications", desc: "Android and cross-platform apps for connected products and business workflows." },
+  { icon: Code2, title: "Web Applications", desc: "Business portals, dashboards, websites and web-based software systems." },
+  { icon: Cloud, title: "Cloud Dashboards", desc: "Real-time device visualization, alerts, reports and analytics." },
+  { icon: Bot, title: "AI Integration", desc: "Computer vision, predictive analytics and intelligent automation features." },
+  { icon: Camera, title: "CCTV Installation", desc: "Security cameras, monitoring systems and site surveillance setup." },
+  { icon: Network, title: "Network Setup & MikroTik Networks", desc: "LAN, routing, hotspot, MikroTik and structured network configuration." },
+  { icon: Wifi, title: "Wi-Fi Solutions", desc: "Reliable indoor and outdoor wireless coverage for homes and organizations." },
+  { icon: Server, title: "System Integration & Maintenance", desc: "Connecting hardware, software, networks and support into one working system." },
 ];
-
 export const projects = [
   {
     title: "Bird Species Identifier (Tanzania)",
@@ -196,8 +181,8 @@ export const posts = [
 export const faqs = [
   { q: "Do you serve clients outside Tanzania?", a: "Yes, we deliver across East Africa and offer remote engagements globally." },
   { q: "Can you design custom hardware?", a: "Absolutely. We handle everything from schematic to certified production." },
-  { q: "What's the typical project timeline?", a: "Prototypes usually take 4â€“8 weeks; full deployments 3â€“6 months." },
-  { q: "Do you provide ongoing support?", a: "Yes â€” SLAs, monitoring and firmware updates are standard." },
+  { q: "What's the typical project timeline?", a: "Prototypes usually take 4-8 weeks; full deployments 3-6 months." },
+  { q: "Do you provide ongoing support?", a: "Yes - SLAs, monitoring and firmware updates are standard." },
 ];
 
 export const trustedPartners = [
@@ -236,43 +221,42 @@ export const audienceCards = [
 
 export const coreCapabilities = [
   {
-    icon: Cpu,
-    title: "Embedded Systems & IoT",
-    desc: "Microcontroller firmware, wireless nodes, and connected products for teams building real smart systems.",
+    icon: Radio,
+    title: "IoT & Automation",
+    desc: "Smart home systems, smart agriculture, industrial monitoring and remote sensor networks for connected operations.",
     to: "/services" as const,
   },
   {
     icon: CircuitBoard,
-    title: "Electronics & PCB Design",
-    desc: "Schematic to production-ready boards with industrial-grade reliability and certification support.",
+    title: "Engineering & Development",
+    desc: "PCB design, embedded systems, custom electronics and prototype development from idea to tested hardware.",
     to: "/services" as const,
   },
   {
-    icon: Factory,
-    title: "Smart Automation",
-    desc: "Industrial, agricultural, and building automation with PLC, SCADA, and telemetry expertise.",
+    icon: Code2,
+    title: "Software Solutions",
+    desc: "Mobile applications, web applications, cloud dashboards and AI integration for modern digital products.",
     to: "/services" as const,
   },
   {
-    icon: Cloud,
-    title: "Software & Cloud",
-    desc: "Mobile apps, web platforms, and real-time dashboards that connect your hardware to the cloud.",
+    icon: Smartphone,
+    title: "Electronics Services",
+    desc: "Phone repair, laptop repair, computer maintenance and electronic device repair with practical diagnostics.",
     to: "/services" as const,
   },
   {
     icon: Network,
-    title: "Networking & Security",
-    desc: "Enterprise Wi-Fi, MikroTik routing, CCTV, and access control for secure connected environments.",
+    title: "Networks & Security",
+    desc: "CCTV installation, MikroTik network setup, Wi-Fi solutions and reliable connected-site infrastructure.",
     to: "/services" as const,
   },
   {
-    icon: Sun,
-    title: "Energy & Infrastructure",
-    desc: "Solar installation, energy monitoring, and electrical systems for sustainable operations.",
+    icon: Server,
+    title: "System Integration & Maintenance",
+    desc: "Hardware, software, networks and support joined into maintainable systems that keep working after launch.",
     to: "/services" as const,
   },
 ];
-
 export const industries = [
   {
     icon: Sprout,
@@ -317,6 +301,7 @@ export const stats = [
   { n: 5, s: "+", l: "Countries Reached" },
   { n: 98, s: "%", l: "Client Satisfaction" },
 ];
+
 
 
 

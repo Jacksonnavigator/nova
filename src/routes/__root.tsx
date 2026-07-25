@@ -85,12 +85,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "TechNova Electronics & IoT" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "TechNova Electronics & IoT — Turning Ideas into Smart Solutions" },
-      { property: "og:title", content: "TechNova Electronics & IoT — Turning Ideas into Smart Solutions" },
-      { name: "twitter:title", content: "TechNova Electronics & IoT — Turning Ideas into Smart Solutions" },
-      { name: "description", content: "East Africa's premier electronics, embedded systems, IoT, automation and software engineering company. Design • Integrate • Innovate." },
-      { property: "og:description", content: "East Africa's premier electronics, embedded systems, IoT, automation and software engineering company. Design • Integrate • Innovate." },
-      { name: "twitter:description", content: "East Africa's premier electronics, embedded systems, IoT, automation and software engineering company. Design • Integrate • Innovate." },
+      { title: "TechNova Electronics & IoT - Turning Ideas into Smart Solutions" },
+      { property: "og:title", content: "TechNova Electronics & IoT - Turning Ideas into Smart Solutions" },
+      { name: "twitter:title", content: "TechNova Electronics & IoT - Turning Ideas into Smart Solutions" },
+      { name: "description", content: "East Africa's premier electronics, embedded systems, IoT, automation and software engineering company. Design, Integrate, Innovate." },
+      { property: "og:description", content: "East Africa's premier electronics, embedded systems, IoT, automation and software engineering company. Design, Integrate, Innovate." },
+      { name: "twitter:description", content: "East Africa's premier electronics, embedded systems, IoT, automation and software engineering company. Design, Integrate, Innovate." },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/1e52f7fe-6473-48f8-8385-3168795475a9" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/1e52f7fe-6473-48f8-8385-3168795475a9" },
     ],
@@ -112,8 +112,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           name: "TechNova Electronics & IoT",
           slogan: "Turning Ideas into Smart Solutions",
           url: "/",
-          email: "technova.iot@gmail.com",
-          telephone: "+255756617479",
+          email: "novatech.iot@gmail.com",
+          telephone: "+255682334222",
+          contactPoint: [
+            { "@type": "ContactPoint", telephone: "+255682334222", contactType: "customer service" },
+            { "@type": "ContactPoint", telephone: "+255627182180", contactType: "customer service" },
+          ],
           address: { "@type": "PostalAddress", addressLocality: "Arusha", addressCountry: "TZ" },
         }),
       },
@@ -153,3 +157,5 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
+
+

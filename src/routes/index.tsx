@@ -1,4 +1,4 @@
-﻿import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import { ArrowRight, CheckCircle2, Mail, Phone, MapPin, ChevronRight } from "lucide-react";
 import { GlassCard } from "@/components/site/GlassCard";
@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "East Africa's premier electronics, embedded systems, IoT, automation and software engineering company. Design, integrate and innovate.",
+          "TechNova Electronics & IoT builds hardware and software systems for electronics services, IoT automation, engineering development and software solutions.",
       },
       {
         property: "og:title",
@@ -21,8 +21,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:description",
-        content:
-          "East Africa's premier electronics, embedded systems, IoT, automation and software engineering company.",
+        content: "Design, integrate and innovate with TechNova hardware and software systems.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -47,7 +46,7 @@ function Home() {
     <main>
       <section className="relative min-h-[88vh] flex items-center overflow-hidden bg-slate-950">
         <img
-          src="/assets/engineering-lab-bench.jpg"
+          src="/assets/industrial-engineering-workshop.jpg"
           alt="Engineering workshop with technology systems in production"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
@@ -60,15 +59,18 @@ function Home() {
             className="max-w-3xl"
           >
             <div className="mb-5 inline-flex items-center gap-2 rounded-md bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-blue-100 backdrop-blur">
-              Electronics, IoT and automation
+              Hardware & Software Systems
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-semibold leading-[1.1] text-white tracking-tight">
-              We Build Smart Systems That Drive What&apos;s Next
+              Turning Ideas Into Smart Solutions
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-slate-200 max-w-2xl leading-relaxed">
-              Electronics, embedded systems, IoT, automation, and software engineering for
-              organizations that need to move fast without compromising on quality.
+              TechNova Electronics & IoT designs, integrates and innovates hardware and software
+              systems for homes, farms, businesses and industry.
             </p>
+            <div className="mt-6 text-sm font-semibold uppercase tracking-[0.22em] text-blue-200">
+              Design | Integrate | Innovate
+            </div>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
                 to="/contact"
@@ -147,10 +149,7 @@ function Home() {
 
       <section className="section-pad bg-cloud">
         <div className="mx-auto max-w-7xl px-6">
-          <SectionHeader
-            eyebrow="Core Capabilities"
-            title="Electronics & Technology Solutions Built for What's Next"
-          />
+          <SectionHeader eyebrow="Core Capabilities" title="Hardware & Software Systems" />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {coreCapabilities.map((cap, index) => (
               <GlassCard key={cap.title} className="flex flex-col min-h-[330px] p-0 overflow-hidden">
@@ -172,7 +171,7 @@ function Home() {
                     to={cap.to}
                     className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand hover:text-brand-dark transition-colors"
                   >
-                    Explore {cap.title.split(" ")[0]} <ChevronRight className="h-4 w-4" />
+                    Explore <ChevronRight className="h-4 w-4" />
                   </Link>
                 </div>
               </GlassCard>
@@ -208,10 +207,10 @@ function Home() {
         <div className="relative mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-300 mb-4">
-              AI & Technology
+              Software Solutions
             </div>
             <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight mb-4">
-              Smart Engineering, Human-Led Innovation
+              Mobile apps, web apps, dashboards and AI integration.
             </h2>
             <p className="text-slate-300 leading-relaxed mb-8">
               We combine embedded systems, IoT platforms, and AI-powered analytics with hands-on
@@ -254,7 +253,7 @@ function Home() {
               <div className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-200">
                 About TechNova
               </div>
-              <h2 className="mt-2 text-3xl font-semibold text-white">People. Technology. Impact.</h2>
+              <h2 className="mt-2 text-3xl font-semibold text-white">We build smart solutions for a smarter future.</h2>
               <p className="mt-3 text-sm leading-relaxed text-slate-200">
                 Specialized engineering, practical field experience and human-first partnerships across East Africa.
               </p>
@@ -320,8 +319,8 @@ function Home() {
           />
           <div className="grid lg:grid-cols-5 gap-8 max-w-5xl mx-auto">
             <div className="lg:col-span-2 space-y-6">
-              <ContactInfo icon={Mail} label="Email" value="technova.iot@gmail.com" />
-              <ContactInfo icon={Phone} label="Phone" value="+255 756 617 479" />
+              <ContactInfo icon={Mail} label="Email" value="novatech.iot@gmail.com" />
+              <ContactInfo icon={Phone} label="Phone" value="+255 682 334 222 / +255 627 182 180" />
               <ContactInfo icon={MapPin} label="Headquarters" value="Arusha, Tanzania" />
             </div>
             <GlassCard hover={false} className="lg:col-span-3 p-8">
