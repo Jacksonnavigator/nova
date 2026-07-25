@@ -1,0 +1,324 @@
+﻿import {
+  Wrench, Cpu, Radio, Cloud, ShieldCheck, Wifi, Database, Code2, Server,
+  Home, Sprout, Factory, Zap, Droplet, Camera, Fingerprint, Sun, Plug,
+  CircuitBoard, Smartphone, Laptop, Monitor, Bot, Network, HardDrive, Layers,
+} from "lucide-react";
+
+export const services = [
+  { icon: Smartphone, title: "Phone Repair", desc: "Screens, batteries, boards â€” fast and reliable." },
+  { icon: Laptop, title: "Laptop Repair", desc: "Diagnostics, upgrades, motherboard repair." },
+  { icon: Monitor, title: "Computer Repair", desc: "Hardware and software maintenance." },
+  { icon: Wrench, title: "Electronics Repair", desc: "Consumer & industrial device recovery." },
+  { icon: CircuitBoard, title: "PCB Design", desc: "Schematic to production-ready boards." },
+  { icon: Cpu, title: "Embedded Systems", desc: "Firmware for microcontrollers & SoCs." },
+  { icon: Bot, title: "Arduino Projects", desc: "Prototyping and educational solutions." },
+  { icon: Radio, title: "ESP32 Development", desc: "Wireless IoT nodes and gateways." },
+  { icon: Layers, title: "STM32 Development", desc: "High-performance embedded platforms." },
+  { icon: HardDrive, title: "Raspberry Pi Solutions", desc: "Edge computing and control." },
+  { icon: Wifi, title: "IoT Devices", desc: "End-to-end connected products." },
+  { icon: Home, title: "Smart Home Automation", desc: "Lighting, HVAC, security & voice." },
+  { icon: Sprout, title: "Smart Agriculture", desc: "Sensor-driven crop intelligence." },
+  { icon: Droplet, title: "Automatic Irrigation", desc: "Zone-based water optimization." },
+  { icon: Factory, title: "Industrial Automation", desc: "PLC, SCADA and telemetry." },
+  { icon: Zap, title: "Energy Monitoring", desc: "Real-time power analytics." },
+  { icon: Droplet, title: "Water Monitoring", desc: "Level, quality and flow tracking." },
+  { icon: Radio, title: "Remote Sensors", desc: "LoRa, GSM and satellite links." },
+  { icon: Smartphone, title: "Mobile Apps", desc: "iOS & Android native/cross-platform." },
+  { icon: Code2, title: "Web Development", desc: "Marketing sites, portals, SaaS." },
+  { icon: Monitor, title: "Desktop Software", desc: "Cross-platform business tools." },
+  { icon: Cloud, title: "Cloud Dashboards", desc: "Real-time device visualization." },
+  { icon: Bot, title: "AI Solutions", desc: "Computer vision & predictive models." },
+  { icon: Database, title: "Database Systems", desc: "SQL / NoSQL / time-series." },
+  { icon: Server, title: "API Development", desc: "REST & GraphQL microservices." },
+  { icon: Network, title: "Networking", desc: "LAN, WAN and structured cabling." },
+  { icon: Wifi, title: "Wi-Fi Solutions", desc: "Enterprise-grade coverage." },
+  { icon: Server, title: "MikroTik", desc: "Advanced routing & hotspot systems." },
+  { icon: Server, title: "Server Installation", desc: "On-prem and hybrid servers." },
+  { icon: Camera, title: "CCTV Installation", desc: "HD & AI-powered surveillance." },
+  { icon: Fingerprint, title: "Fingerprint Systems", desc: "Biometric identity solutions." },
+  { icon: ShieldCheck, title: "Access Control", desc: "Doors, gates, and time tracking." },
+  { icon: Sun, title: "Solar Installation", desc: "Off-grid & hybrid PV systems." },
+  { icon: Plug, title: "Electrical Installation", desc: "Certified wiring & panels." },
+];
+
+export const projects = [
+  {
+    title: "Bird Species Identifier (Tanzania)",
+    tag: "AI Software",
+    desc: "Computer-vision software for identifying Tanzanian bird species from uploaded or captured images.",
+    image: "/assets/software/bird-species-identifier-tanzania.jpg",
+  },
+  {
+    title: "Bongo SMS Scam Detector",
+    tag: "Security Software",
+    desc: "SMS analysis tool that flags suspicious Bongo scam messages and explains warning signs before users respond.",
+    image: "/assets/software/bongo-sms-scam-detector.jpg",
+  },
+  {
+    title: "Smart Irrigation System",
+    tag: "AgriTech",
+    desc: "Soil-moisture driven zone irrigation with mobile control.",
+    image: "/assets/Soil Sensor system to record data and send tothe backend and i the cloud.jpg",
+  },
+  {
+    title: "Energy Monitoring System",
+    tag: "Utilities",
+    desc: "Real-time power quality and consumption analytics.",
+    image: "/assets/projects/Solar adaptive charging through AI.jpg",
+  },
+  {
+    title: "Industrial IoT Dashboard",
+    tag: "Industry 4.0",
+    desc: "Unified telemetry for factory floor equipment.",
+    image: "/assets/Industrial VFD machine.jpg",
+  },
+  {
+    title: "Water Tank Monitoring",
+    tag: "Smart City",
+    desc: "Ultrasonic level sensing with cloud alerts.",
+    image: "/assets/Iot Kit.jpg",
+  },
+  { title: "Smart Home System", tag: "Automation", desc: "Voice + app controlled lighting, HVAC, security.", image: "/assets/security-monitoring.jpg" },
+  { title: "Attendance Management", tag: "Enterprise", desc: "Biometric + RFID with HR-grade reporting.", image: "/assets/client-strategy-meeting.jpg" },
+  { title: "Hospital Queue System", tag: "Healthcare", desc: "Digital queuing with SMS notifications.", image: "/assets/software-dashboard-code.jpg" },
+];
+export const products = [
+  {
+    title: "IoT Boards",
+    desc: "ESP32/STM32 based connected boards.",
+    price: "From $49",
+    image: "/assets/Iot Kit.jpg",
+  },
+  {
+    title: "Control Panels",
+    desc: "Industrial-grade automation panels.",
+    price: "Custom",
+    image: "/assets/Industrial VFD machine.jpg",
+  },
+  { title: "Custom PCB", desc: "Design and manufacturing services.", price: "Quote", image: "/assets/engineering-lab-bench.jpg" },
+  {
+    title: "Automation Systems",
+    desc: "Turnkey home & factory kits.",
+    price: "From $299",
+    image: "/assets/Industrial VFD machine.jpg",
+  },
+  {
+    title: "Smart Sensors",
+    desc: "Environmental & industrial sensors.",
+    price: "From $19",
+    image: "/assets/Soil Sensor system to record data and send tothe backend and i the cloud.jpg",
+  },
+  {
+    title: "Embedded Devices",
+    desc: "Firmware-loaded ready modules.",
+    price: "From $79",
+    image: "/assets/Solar adaptive charging through AI.jpg",
+  },
+  { title: "Electronic Modules", desc: "Relays, drivers, converters.", price: "From $9", image: "/assets/engineering-lab-bench.jpg" },
+];
+export const values = [
+  { title: "Innovation", desc: "Pioneering the technology of tomorrow." },
+  { title: "Integrity", desc: "Transparency in every engagement." },
+  { title: "Quality", desc: "Engineered to industrial standards." },
+  { title: "Customer Satisfaction", desc: "Success measured by yours." },
+  { title: "Professionalism", desc: "Delivered by certified experts." },
+  { title: "Teamwork", desc: "Cross-disciplinary collaboration." },
+];
+
+export const timeline = [
+  { year: "2019", title: "Founded", desc: "Started as an electronics repair shop in Arusha." },
+  { year: "2021", title: "IoT Division", desc: "Launched dedicated IoT and embedded team." },
+  { year: "2023", title: "50+ Projects", desc: "Delivered enterprise IoT deployments across EA." },
+  { year: "2025", title: "Regional Expansion", desc: "Serving clients across East Africa." },
+  { year: "2026", title: "Innovation Lab", desc: "New R&D center for AI + hardware." },
+];
+
+export const testimonials = [
+  { name: "Amina J.", role: "Farm Owner", quote: "Their smart irrigation cut our water use by 40%." },
+  { name: "David M.", role: "Factory Manager", quote: "Real-time telemetry transformed our operations." },
+  { name: "Sarah K.", role: "Hospital Admin", quote: "Queue system dramatically reduced patient wait times." },
+  { name: "Peter O.", role: "Retail Chain CEO", quote: "Inventory accuracy jumped to 99% overnight." },
+];
+
+export const jobs = [
+  { role: "Embedded Systems Engineer", type: "Full-time", location: "Arusha" },
+  { role: "Full-Stack Developer", type: "Full-time", location: "Remote" },
+  { role: "PCB Designer", type: "Contract", location: "Arusha" },
+  { role: "IoT Solutions Architect", type: "Full-time", location: "Hybrid" },
+  { role: "Firmware Intern", type: "Internship", location: "Arusha" },
+  { role: "Mobile App Developer", type: "Full-time", location: "Remote" },
+];
+
+export const posts = [
+  {
+    title: "The Rise of Edge AI in East Africa",
+    cat: "AI",
+    date: "Jul 2026",
+    excerpt: "How on-device intelligence is transforming agriculture and utilities.",
+    image: "/assets/ai-technology-interface.jpg",
+  },
+  {
+    title: "Designing Reliable IoT Gateways",
+    cat: "IoT",
+    date: "Jun 2026",
+    excerpt: "Hardware and firmware patterns for 24/7 uptime.",
+    image: "/assets/Iot Kit.jpg",
+  },
+  {
+    title: "MikroTik in Enterprise Networks",
+    cat: "Networking",
+    date: "May 2026",
+    excerpt: "Deep dive into RouterOS best practices.",
+    image: "/assets/server-room-cloud.jpg",
+  },
+  {
+    title: "STM32 vs ESP32 in 2026",
+    cat: "Electronics",
+    date: "Apr 2026",
+    excerpt: "Choosing the right MCU for your product.",
+    image: "/assets/electronics-prototyping.jpg",
+  },
+  {
+    title: "SCADA for Small Factories",
+    cat: "Automation",
+    date: "Mar 2026",
+    excerpt: "Affordable telemetry for growing operations.",
+    image: "/assets/Industrial VFD machine.jpg",
+  },
+  {
+    title: "Building Production Firmware",
+    cat: "Programming",
+    date: "Feb 2026",
+    excerpt: "A checklist for shipping robust embedded code.",
+    image: "/assets/engineer-laptop-workshop.jpg",
+  },
+];
+export const faqs = [
+  { q: "Do you serve clients outside Tanzania?", a: "Yes, we deliver across East Africa and offer remote engagements globally." },
+  { q: "Can you design custom hardware?", a: "Absolutely. We handle everything from schematic to certified production." },
+  { q: "What's the typical project timeline?", a: "Prototypes usually take 4â€“8 weeks; full deployments 3â€“6 months." },
+  { q: "Do you provide ongoing support?", a: "Yes â€” SLAs, monitoring and firmware updates are standard." },
+];
+
+export const trustedPartners = [
+  "Safaricom", "Vodacom", "CRDB Bank", "NMB Bank", "Tanzania Breweries",
+  "Kilimanjaro Water", "Aga Khan Hospital", "Precision Air", "TANESCO", "TRA",
+];
+
+export const audienceCards = [
+  {
+    tag: "For Businesses",
+    title: "Build. Scale. Innovate.",
+    desc: "Access specialized engineering, IoT expertise, and end-to-end solutions that drive real business impact.",
+    points: [
+      "Custom hardware & firmware development",
+      "Vetted engineering professionals",
+      "Turnkey automation & IoT deployments",
+      "Accelerated delivery with high quality",
+    ],
+    cta: "Start a Project",
+    to: "/contact" as const,
+  },
+  {
+    tag: "For Innovators",
+    title: "Your Next Build Starts Here.",
+    desc: "Partner with a forward-thinking engineering team to bring your smart product ideas to life.",
+    points: [
+      "Access to enterprise-grade technology",
+      "Competitive project pricing",
+      "Rapid prototyping & iteration",
+      "Technical guidance and mentorship",
+    ],
+    cta: "Explore Services",
+    to: "/services" as const,
+  },
+];
+
+export const coreCapabilities = [
+  {
+    icon: Cpu,
+    title: "Embedded Systems & IoT",
+    desc: "Microcontroller firmware, wireless nodes, and connected products for teams building real smart systems.",
+    to: "/services" as const,
+  },
+  {
+    icon: CircuitBoard,
+    title: "Electronics & PCB Design",
+    desc: "Schematic to production-ready boards with industrial-grade reliability and certification support.",
+    to: "/services" as const,
+  },
+  {
+    icon: Factory,
+    title: "Smart Automation",
+    desc: "Industrial, agricultural, and building automation with PLC, SCADA, and telemetry expertise.",
+    to: "/services" as const,
+  },
+  {
+    icon: Cloud,
+    title: "Software & Cloud",
+    desc: "Mobile apps, web platforms, and real-time dashboards that connect your hardware to the cloud.",
+    to: "/services" as const,
+  },
+  {
+    icon: Network,
+    title: "Networking & Security",
+    desc: "Enterprise Wi-Fi, MikroTik routing, CCTV, and access control for secure connected environments.",
+    to: "/services" as const,
+  },
+  {
+    icon: Sun,
+    title: "Energy & Infrastructure",
+    desc: "Solar installation, energy monitoring, and electrical systems for sustainable operations.",
+    to: "/services" as const,
+  },
+];
+
+export const industries = [
+  {
+    icon: Sprout,
+    title: "Agriculture & AgriTech",
+    desc: "Smart irrigation, soil monitoring, and crop intelligence systems that revolutionize farming across East Africa.",
+    image: "/assets/smart-agriculture-field.jpg",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Healthcare & Life Sciences",
+    desc: "Digital health platforms, queue management, and monitoring systems for hospitals and clinics.",
+    image: "/assets/software-dashboard-code.jpg",
+  },
+  {
+    icon: Code2,
+    title: "Technology & Software",
+    desc: "Full-stack engineering, IoT platforms, cloud dashboards, and embedded firmware for tech companies.",
+    image: "/assets/software-dashboard-code.jpg",
+  },
+  {
+    icon: Monitor,
+    title: "Retail & E-Commerce",
+    desc: "Inventory tracking, POS integrations, and smart retail solutions with barcode and IoT systems.",
+    image: "/assets/client-strategy-meeting.jpg",
+  },
+  {
+    icon: Factory,
+    title: "Industrial & Manufacturing",
+    desc: "Factory floor telemetry, PLC automation, and SCADA systems for modern production lines.",
+    image: "/assets/Industrial VFD machine.jpg",
+  },
+  {
+    icon: Zap,
+    title: "Energy & Utilities",
+    desc: "Power monitoring, solar systems, water level tracking, and smart grid solutions.",
+    image: "/assets/solar-field.jpg",
+  },
+];
+export const stats = [
+  { n: 180, s: "+", l: "Enterprise Partners" },
+  { n: 250, s: "+", l: "Successful Projects" },
+  { n: 5, s: "+", l: "Countries Reached" },
+  { n: 98, s: "%", l: "Client Satisfaction" },
+];
+
+
+
+
+

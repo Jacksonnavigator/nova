@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: technova-electronics-iot
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: NODE_ENV
+        value: production
+      - key: NITRO_PRESET
+        value: render-com
