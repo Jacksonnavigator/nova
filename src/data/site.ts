@@ -26,12 +26,59 @@ export const services = [
   { icon: Wifi, title: "Wi-Fi Solutions", desc: "Reliable indoor and outdoor wireless coverage for homes and organizations." },
   { icon: Server, title: "System Integration & Maintenance", desc: "Connecting hardware, software, networks and support into one working system." },
 ];
-export const projects = [
+export type Project = {
+  title: string;
+  tag: string;
+  desc: string;
+  image: string;
+  period?: string;
+  client?: string;
+  url?: string;
+  highlights?: string[];
+};
+
+export const projects: Project[] = [
   {
-    title: "Bird Species Identifier (Tanzania)",
-    tag: "AI Software",
-    desc: "Computer-vision software for identifying Tanzanian bird species from uploaded or captured images.",
+    title: "Bird Classification for Weather Conservation",
+    tag: "AI Conservation",
+    period: "Feb 2025 - May 2025",
+    client: "Don Bosco KIITEC",
+    desc: "AI project trained to classify migratory and non-migratory bird species, supporting environmental monitoring and weather prediction systems.",
     image: "/assets/software/bird-species-identifier-tanzania.jpg",
+    url: "https://huggingface.co/spaces/Jacksonnavigator7/Bird",
+    highlights: [
+      "Trained AI models for bird species classification.",
+      "Separated migratory and non-migratory bird categories.",
+      "Built for conservation, monitoring and weather intelligence use cases.",
+    ],
+  },
+  {
+    title: "Eagle Vision Safaris Website",
+    tag: "Web Development",
+    period: "Dec 2024 - Jan 2025",
+    client: "Eagle Vision Safaris",
+    desc: "Professional travel website designed and launched to improve customer engagement, responsive browsing and safari booking enquiries.",
+    image: "/assets/client-strategy-meeting.jpg",
+    url: "https://www.eaglevisionsafaris.co.tz/",
+    highlights: [
+      "Designed and launched a professional travel website.",
+      "Used responsive design techniques for mobile and desktop visitors.",
+      "Integrated booking-focused customer engagement features.",
+    ],
+  },
+  {
+    title: "URIPHYTOS Hospital Management System",
+    tag: "HealthTech",
+    period: "May 2025 - Sept 2025",
+    client: "URIPHYTOS",
+    desc: "Hospital management system built for multiple hospitals to digitize patient information storage, access and daily management workflows.",
+    image: "/assets/software-dashboard-code.jpg",
+    url: "http://iphytosmedsystem.com",
+    highlights: [
+      "Designed and launched a hospital management system for multiple hospitals.",
+      "Digitized patient information storage and management.",
+      "Improved healthcare administration through centralized records.",
+    ],
   },
   {
     title: "Bongo SMS Scam Detector",

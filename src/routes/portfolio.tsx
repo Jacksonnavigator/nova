@@ -1,10 +1,10 @@
-﻿import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell, PageHeader } from "@/components/site/PageShell";
 import { GlassCard } from "@/components/site/GlassCard";
 import { SectionHeader } from "@/components/site/SectionHeader";
 import { AnimatedCounter } from "@/components/site/AnimatedCounter";
 import { testimonials, projects, stats } from "@/data/site";
-import { Award, Star, ArrowRight, Code2, ShieldCheck } from "lucide-react";
+import { Award, Star, ArrowRight, Code2, ShieldCheck, ExternalLink } from "lucide-react";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -12,10 +12,10 @@ export const Route = createFileRoute("/portfolio")({
       { title: "Portfolio - TechNova Electronics & IoT" },
       {
         name: "description",
-        content: "Gallery of completed projects, client reviews, awards and achievements.",
+        content: "Gallery of major projects, practical work, client reviews, awards and achievements.",
       },
       { property: "og:title", content: "TechNova Portfolio" },
-      { property: "og:description", content: "Showcase of engineering excellence and delivered outcomes." },
+      { property: "og:description", content: "Showcase of AI, software, web, healthcare and engineering excellence." },
       { property: "og:url", content: "/portfolio" },
     ],
     links: [{ rel: "canonical", href: "/portfolio" }],
@@ -32,18 +32,23 @@ const awards = [
   "Startup of the Year Finalist 2022",
 ];
 
-const softwareProjectTitles = ["Bird Species Identifier (Tanzania)", "Bongo SMS Scam Detector"];
+const majorProjectTitles = [
+  "Bird Classification for Weather Conservation",
+  "Eagle Vision Safaris Website",
+  "URIPHYTOS Hospital Management System",
+  "Bongo SMS Scam Detector",
+];
 
 function Portfolio() {
-  const softwareProjects = projects.filter((project) => softwareProjectTitles.includes(project.title));
-  const galleryProjects = projects.filter((project) => !softwareProjectTitles.includes(project.title));
+  const majorProjects = projects.filter((project) => majorProjectTitles.includes(project.title));
+  const galleryProjects = projects.filter((project) => !majorProjectTitles.includes(project.title));
 
   return (
     <PageShell>
       <PageHeader
         eyebrow="Achievements"
         title="Portfolio"
-        description="A visual record of the systems we've engineered and the clients we've served."
+        description="A visual record of the systems we've engineered, the software we've shipped and the clients we've served."
       />
 
       <section className="mx-auto max-w-7xl px-6 mb-20">
@@ -61,7 +66,7 @@ function Portfolio() {
               </div>
               <h2 className="text-3xl sm:text-4xl font-semibold text-white">Proof you can see.</h2>
               <p className="mt-3 text-sm leading-relaxed text-slate-200">
-                From panels and sensors to dashboards, mobile tools and AI software, these are the systems we take from idea to working deployment.
+                From AI models and hospital software to websites, panels, sensors, dashboards and mobile tools, these are systems we take from idea to working deployment.
               </p>
             </div>
             <div className="md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -82,30 +87,65 @@ function Portfolio() {
 
       <section className="mx-auto max-w-7xl px-6 mb-20">
         <SectionHeader
-          eyebrow="Software Projects"
-          title="AI and Security Tools Built for Tanzania"
-          description="Two software products added to the portfolio: one for local biodiversity intelligence, one for safer mobile messaging."
+          eyebrow="Major Projects & Practical Work"
+          title="AI, Web and Hospital Systems Built for Real Use"
+          description="Selected practical projects including bird conservation AI, safari website development, hospital management software and SMS scam detection."
         />
         <div className="grid lg:grid-cols-2 gap-6">
-          {softwareProjects.map((project, index) => {
-            const Icon = index === 0 ? Code2 : ShieldCheck;
+          {majorProjects.map((project, index) => {
+            const Icon = project.tag.toLowerCase().includes("security") ? ShieldCheck : Code2;
 
             return (
               <GlassCard key={project.title} className="p-0 overflow-hidden">
-                <div className="relative min-h-[340px] bg-slate-900 overflow-hidden">
+                <div className="relative min-h-[420px] bg-slate-900 overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="absolute inset-0 h-full w-full object-cover object-center"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/15 to-transparent" />
-                  <div className="absolute bottom-6 left-6 right-6">
-                    <div className="mb-4 inline-flex items-center gap-2 rounded-md bg-white/12 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-white backdrop-blur">
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent" />
+                  <div className="absolute top-5 left-5 right-5 flex flex-wrap gap-2">
+                    <span className="inline-flex items-center gap-2 rounded-md bg-white/12 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-white backdrop-blur">
                       <Icon className="h-4 w-4" />
                       {project.tag}
-                    </div>
+                    </span>
+                    {project.period && (
+                      <span className="rounded-md bg-white/12 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-white backdrop-blur">
+                        {project.period}
+                      </span>
+                    )}
+                  </div>
+                  <div className="absolute bottom-6 left-6 right-6">
+                    {project.client && (
+                      <div className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-200 mb-2">
+                        {project.client}
+                      </div>
+                    )}
                     <h3 className="text-2xl sm:text-3xl font-semibold text-white">{project.title}</h3>
                     <p className="mt-3 text-sm leading-relaxed text-slate-200">{project.desc}</p>
+                    {project.highlights && (
+                      <ul className="mt-4 grid gap-2 text-sm text-slate-200">
+                        {project.highlights.slice(0, 2).map((item) => (
+                          <li key={item} className="flex gap-2 leading-relaxed">
+                            <span className="mt-2 h-1.5 w-1.5 rounded-full bg-blue-300 shrink-0" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    {project.url && (
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-5 inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-blue-50 transition-colors"
+                      >
+                        View project <ExternalLink className="h-4 w-4" />
+                      </a>
+                    )}
+                  </div>
+                  <div className="absolute bottom-5 right-6 text-4xl font-semibold text-white/15">
+                    {String(index + 1).padStart(2, "0")}
                   </div>
                 </div>
               </GlassCard>
