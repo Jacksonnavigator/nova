@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import { ArrowRight, CheckCircle2, Mail, Phone, MapPin, ChevronRight } from "lucide-react";
 import { GlassCard } from "@/components/site/GlassCard";
@@ -38,7 +38,7 @@ const capabilityImages = [
   "/assets/Industrial VFD machine.jpg",
   "/assets/server-room-cloud.jpg",
   "/assets/security-monitoring.jpg",
-  "/assets/solar-field.jpg",
+  "/assets/Home/tech.jpg",
 ];
 
 function Home() {
@@ -46,7 +46,7 @@ function Home() {
     <main>
       <section className="relative min-h-[88vh] flex items-center overflow-hidden bg-slate-950">
         <img
-          src="/assets/industrial-engineering-workshop.jpg"
+          src="/assets/Home/Hero.png/"
           alt="Engineering workshop with technology systems in production"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
@@ -244,7 +244,7 @@ function Home() {
         <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-[0.9fr_1.1fr] gap-8 items-stretch">
           <div className="relative min-h-[420px] overflow-hidden rounded-xl border border-slate-200 bg-slate-900">
             <img
-              src="/assets/team-workspace.jpg"
+              src="/assets/Home/web.jpg"
               alt="Technology team working together at a shared table"
               className="absolute inset-0 h-full w-full object-cover object-center"
             />

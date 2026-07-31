@@ -59,7 +59,7 @@ function About() {
         <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-6 items-stretch">
           <div className="rounded-xl overflow-hidden border border-slate-200 bg-slate-900 min-h-[430px] relative">
             <img
-              src="/assets/team-workspace.jpg"
+              src="/assets/logo.png"
               alt="Technology team collaborating around laptops and devices"
               className="absolute inset-0 h-full w-full object-cover"
             />

@@ -1,4 +1,4 @@
-import {
+﻿import {
   Wrench, Cpu, Radio, Cloud, ShieldCheck, Wifi, Database, Code2, Server,
   Home, Sprout, Factory, Zap, Droplet, Camera, Fingerprint, Sun, Plug,
   CircuitBoard, Smartphone, Laptop, Monitor, Bot, Network, HardDrive, Layers,
@@ -123,8 +123,8 @@ export const projects: Project[] = [
     image: "/assets/projects/Solar adaptive charging through AI.jpg",
   },
   { title: "Smart Home System", tag: "Automation", desc: "Voice + app controlled lighting, HVAC, security.", image: "/assets/security-monitoring.jpg" },
-  { title: "Attendance Management", tag: "Enterprise", desc: "Biometric + RFID with HR-grade reporting.", image: "/assets/client-strategy-meeting.jpg" },
-  { title: "Hospital Queue System", tag: "Healthcare", desc: "Digital queuing with SMS notifications.", image: "/assets/software-dashboard-code.jpg" },
+  { title: "Attendance Management", tag: "Enterprise", desc: "Biometric + RFID with HR-grade reporting.", image: "/assets/projects/attend.png" },
+  { title: "Hospital Queue System", tag: "Healthcare", desc: "Digital queuing with SMS notifications.", image: "/assets/projects/hosp.png" },
 ];
 export const products = [
   {
@@ -333,7 +333,7 @@ export const industries = [
     icon: Code2,
     title: "Technology & Software",
     desc: "Full-stack engineering, IoT platforms, cloud dashboards, and embedded firmware for tech companies.",
-    image: "/assets/software-dashboard-code.jpg",
+    image: "/assets/Home/gy.jpg",
   },
   {
     icon: Monitor,

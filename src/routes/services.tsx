@@ -45,7 +45,7 @@ const flyerServiceGroups = [
   {
     icon: Smartphone,
     title: "Electronics Services",
-    image: "/assets/engineer-laptop-workshop.jpg",
+    image: "/assets/Services/Deploying Ideas.jpg",
     items: ["Phone Repair", "Laptop Repair", "Computer Maintenance", "Electronic Device Repair"],
   },
   {
@@ -63,7 +63,7 @@ const flyerServiceGroups = [
   {
     icon: Code2,
     title: "Software Solutions",
-    image: "/assets/software-dashboard-code.jpg",
+    image: "/assets/Services/software.png",
     items: ["Mobile Applications", "Web Applications", "Cloud Dashboards", "AI Integration"],
   },
 ];
